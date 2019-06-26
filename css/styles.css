@@ -1,0 +1,42 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+}
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-menu{
+  display: flex;
+  
+  
+}
+
+.nav-item{
+  list-style: none;
+  padding: .5rem 1rem;
+}
+.logo>i{
+  padding: .5rem 1rem;
+  font-size: 1.5rem;
+}
+
+
+.slide {  
+  height: auto; 
+  width: 100vw;
+}
+
+
+
+
+
+
