@@ -14,3 +14,8 @@ function carousel() {
   x[myIndex - 1].style.display = "block";
   setTimeout(carousel, 3000); // Change image every 3 seconds
 }
+
+function toggleClass() {
+  let mobmenu = document.getElementById("mob-menu");
+  mobmenu.classList.toggle("hidden");
+}
