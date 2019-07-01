@@ -82,7 +82,48 @@ h4 {
 
 #teamLogo a > img:hover {
   transform: scale(1.5);
-  margin-bottom: 15px;
+}
+
+/* Footer */
+#footer {
+  background-color: #119da4;
+  height: 155px;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#footer h4 {
+  color: #fff;
+  text-align: center;
+}
+
+.para3 {
+  color: #fff;
+  text-align: center;
+}
+
+.fab {
+  color: #fff;
+  padding: 5px;
+}
+
+.credits {
+  background-color: #0E6f72;
+  height: 25px;
+  width: 100%;
+}
+
+.credits p {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 3px;
+  text-align: center;
+}
+
+.social i:hover {
+  color: #c1dff0;
 }
 
 /* Media Queries */
@@ -120,6 +161,13 @@ h4 {
     width: 100px;
     height: 100px;
   }
+
+  .fa-facebook-f,
+   .fa-twitter,
+   .fa-instagram {
+    font-size: 1.60em !important;
+    padding: 0 7px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -145,5 +193,12 @@ h4 {
     display: inline-block;
     margin-left: 60px;
     max-width: 875px;
+  }
+
+   .fa-facebook-f,
+   .fa-twitter,
+   .fa-instagram {
+    font-size: 2em !important;
+    padding: 0 10px;
   }
 }
