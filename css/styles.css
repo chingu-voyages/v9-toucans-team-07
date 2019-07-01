@@ -71,7 +71,7 @@ h4 {
 /* Section Team Logos */
 .official {
   color: #dc352f;
-  margin-toop: 18px;
+  margin-top: 18px;
 }
 
 .logo1,
@@ -82,6 +82,68 @@ h4 {
 
 #teamLogo a > img:hover {
   transform: scale(1.5);
+  margin-bottom: 15px;
 }
 
 /* Media Queries */
+/* Medium devices (landscape tablets - 768px and up) */
+@media only screen and (min-width: 768px) {
+  #main h1 {
+    font-size: 35px;
+  }
+
+  #main h2,
+  #services h2 {
+    margin-top: 35px;
+    font-size: 28px;
+  }
+
+  #main .para2 {
+    font-size: 1.35rem;
+    max-width: 680px;
+    text-align: center;
+  }
+
+  .box1,
+  .box2 {
+    float: left;
+    margin-left: 50px;
+  }
+
+  .box3 {
+    display: block;
+    clear: both;
+    margin-left: 175px;
+  }
+
+  .img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #main h1 {
+    font-size: 42px;
+  }
+
+  #main h2,
+  #services h2 {
+    margin-top: 35px;
+    font-size: 38px;
+  }
+
+  #main .para2 {
+    font-size: 1.45rem;
+    max-width: 875px;
+    text-align: center;
+  }
+
+  .box1,
+  .box2,
+  .box3 {
+    display: inline-block;
+    margin-left: 60px;
+    max-width: 875px;
+  }
+}
