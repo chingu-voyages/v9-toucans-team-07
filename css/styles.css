@@ -20,6 +20,8 @@ body{
   flex-direction: row;
   justify-content: space-between;
   background-color:  #C1DFF0;
+ 
+
   }
 .main-menu{
   display: flex;
@@ -55,10 +57,13 @@ font-size: 1rem;
  }
 
 .slide {  
-  height: auto; 
-   width: 100vw;
+  object-fit:contain;
+  width: 100vw;
 }
-
+#map{
+  object-fit:contain;
+  width: 100vw;
+}
 /*Extra small devices (phones, 600px and down)*/
 @media only screen and (max-width: 600px) {
 
