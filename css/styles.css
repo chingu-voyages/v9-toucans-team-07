@@ -40,6 +40,7 @@ body {
 .mobile-menu {
   padding: 1rem 0rem;
   background-color: #c1dff0;
+  margin: 2rem 0rem 0rem 0rem;
 }
 .mobile-item {
   text-align: center;
