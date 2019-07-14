@@ -14,8 +14,19 @@ body {
     #c1dff0
   );
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+/* Main section - Scrubby Introduction */
+#main {
+  text-align: center;
+}
+
+#main h1 {
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 #main h1,
@@ -25,9 +36,13 @@ h3 {
   text-align: center;
 }
 
-.para1 {
-  font-size: 1.5rem;
+#main .para1 {
   font-weight: bold;
+}
+
+/*  Commercial Washer and Dryer section */
+#commercial {
+  padding-top: 35px;
   text-align: center;
 }
 
@@ -41,12 +56,26 @@ h3 {
   text-align: center;
 }
 
+.washndry {
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
 ul li {
   font-size: 1.125rem;
   list-style-type: none;
 }
 
 /* Section Services */
+#services {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.offer {
+  margin-bottom: 35px;
+}
+
 .box1,
 .box2,
 .box3 {
@@ -55,11 +84,13 @@ ul li {
   width: 230px;
   height: 275px;
   margin-bottom: 25px;
-  box-shadow: 4px 4px 5px #999;
+  box-shadow: 6px 5px 5px #999;
 }
 
 h4 {
   text-align: center;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
 .box1 p,
@@ -68,10 +99,22 @@ h4 {
   margin: 10px 15px;
 }
 
+/* Section Convenient */
+#convenient .para2 {
+  text-align: center;
+}
+
 /* Section Team Logos */
+#teamLogo {
+  margin-bottom: 35px;
+}
+
 .official {
   color: #dc352f;
-  margin-top: 18px;
+  margin-top: 75px;
+  margin-bottom: 8px;
+  text-shadow: 4px 4px 8px #933430;
+  text-align: center;
 }
 
 .logo1,
@@ -81,13 +124,13 @@ h4 {
 }
 
 #teamLogo a > img:hover {
-  transform: scale(1.5);
+  transform: scale(1.4);
 }
 
 /* Footer */
 #footer {
   background-color: #119da4;
-  height: 155px;
+  height: 130px;
   width: 100%;
   margin-top: 20px;
   display: flex;
@@ -97,6 +140,7 @@ h4 {
 #footer h4 {
   color: #fff;
   text-align: center;
+  text-shadow: 6px 6px 10px #125859;
 }
 
 .para3 {
@@ -110,7 +154,7 @@ h4 {
 }
 
 .credits {
-  background-color: #0E6f72;
+  background-color: #0e6f72;
   height: 25px;
   width: 100%;
 }
@@ -122,11 +166,66 @@ h4 {
   text-align: center;
 }
 
-.social i:hover {
+#social i {
+  margin-top: 10px;
+}
+
+#social i:hover {
   color: #c1dff0;
 }
 
 /* Media Queries */
+/*Extra small devices (phones, 600px and down)*/
+@media only screen and (max-width: 600px) {
+  #main h1 {
+    margin-top: 50px;
+    margin-bottom: 35px;
+  }
+
+  #main .para1 {
+    font-size: 1.25rem;
+  }
+
+  #main .para2,
+  #commercial .para2 {
+    font-size: 1rem;
+  }
+
+  ul li {
+    font-size: 0.95rem;
+  }
+
+  #commercial .para2 {
+    margin: 0 10px;
+  }
+
+  #services {
+    text-align: center;
+  }
+
+  .box1,
+  .box2,
+  .box3 {
+    align-self: center;
+  }
+
+  #convenient {
+    margin-bottom: -20px;
+  }
+
+  #convenient .para2 {
+    font-size: 1rem;
+  }
+
+  footer h4 {
+    font-size: 12px;
+  }
+
+  footer .para3 {
+    font-size: 10px;
+  }
+}
+
 /* Medium devices (landscape tablets - 768px and up) */
 @media only screen and (min-width: 768px) {
   #main h1 {
@@ -139,22 +238,31 @@ h4 {
     font-size: 28px;
   }
 
-  #main .para2 {
+  #main .para1 {
     font-size: 1.35rem;
-    max-width: 680px;
+  }
+
+  #main .para2,
+  #commercial .para2 {
+    font-size: 1.2rem;
     text-align: center;
   }
 
   .box1,
   .box2 {
     float: left;
-    margin-left: 50px;
+    margin-left: 70px;
   }
 
   .box3 {
     display: block;
     clear: both;
-    margin-left: 175px;
+    margin-left: 200px;
+  }
+
+  #convenient .para2 {
+    min-width: 500px;
+    padding: 0 10px;
   }
 
   .img {
@@ -163,13 +271,14 @@ h4 {
   }
 
   .fa-facebook-f,
-   .fa-twitter,
-   .fa-instagram {
-    font-size: 1.60em !important;
+  .fa-twitter,
+  .fa-instagram {
+    font-size: 1.6em !important;
     padding: 0 7px;
   }
 }
 
+/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   #main h1 {
     font-size: 42px;
@@ -181,9 +290,10 @@ h4 {
     font-size: 38px;
   }
 
-  #main .para2 {
+  #main .para2,
+  #commercial .para2 {
     font-size: 1.45rem;
-    max-width: 875px;
+    min-width: 875px;
     text-align: center;
   }
 
@@ -191,13 +301,19 @@ h4 {
   .box2,
   .box3 {
     display: inline-block;
-    margin-left: 60px;
-    max-width: 875px;
+    margin-left: 75px;
+    max-width: 1000px;
   }
 
-   .fa-facebook-f,
-   .fa-twitter,
-   .fa-instagram {
+  #convenient .para2 {
+    font-size: 18px;
+    max-width: 680px;
+    padding: 0 10px;
+  }
+
+  .fa-facebook-f,
+  .fa-twitter,
+  .fa-instagram {
     font-size: 2em !important;
     padding: 0 10px;
   }
