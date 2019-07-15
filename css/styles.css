@@ -9,6 +9,8 @@ body {
   width: 100vw;
   height: 100vh;
   color: white;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 .hidden {
@@ -23,6 +25,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  padding: 0 1rem;
 }
 
 .main-menu {
@@ -260,7 +263,9 @@ h4 {
     font-size: 1.25rem;
     margin-bottom: 20px;
   }
-
+.para1, .para2{
+  padding: 0rem 1rem;
+}
   #main .para2,
   #commercial .para2 {
     font-size: 1rem;
@@ -312,7 +317,9 @@ h4 {
     font-size: 1.35rem;
     margin-bottom: 25px;
   }
-
+  .para1, .para2{
+    padding: 0rem 1rem;
+  }
   #main h2,
   #commercial h2,
   #services h2 {
